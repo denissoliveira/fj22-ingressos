@@ -44,7 +44,7 @@ public class SessaoController {
 	@Autowired
 	private Carrinho carrinho;
 
-	@GetMapping("/admin/sessao/{id}/lugares")
+	@GetMapping("/sessao/{id}/lugares")
 	public ModelAndView lugaresNaSessao(@PathVariable("id") Integer sessaoId){
 		ModelAndView modelAndView = new ModelAndView("sessao/lugares");
 
